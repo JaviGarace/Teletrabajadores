@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustShowcase - Vida de Teletrabajador Saludable</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 20px;
+        }
+        header { 
+            text-align: center; 
+            padding: 40px 20px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white; 
+            border-radius: 10px; 
+            margin-bottom: 40px;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .tagline { font-size: 1.2rem; opacity: 0.9; }
+        .categories { 
+            display: flex; 
+            justify-content: center; 
+            gap: 10px; 
+            margin: 30px 0; 
+            flex-wrap: wrap;
+        }
+        .category-tag { 
+            background: rgba(255,255,255,0.2); 
+            padding: 8px 20px; 
+            border-radius: 20px; 
+            font-weight: bold;
+        }
+        .products { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 30px; 
+            margin: 40px 0;
+        }
+        .product-card { 
+            border: 1px solid #e1e1e1; 
+            border-radius: 10px; 
+            padding: 25px; 
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product-card:hover { 
+            transform: translateY(-5px); 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1); 
+        }
+        .product-category { 
+            display: inline-block; 
+            padding: 5px 15px; 
+            border-radius: 15px; 
+            font-size: 0.9rem; 
+            margin-bottom: 15px; 
+            font-weight: bold;
+        }
+        .tech { background: #e3f2fd; color: #1565c0; }
+        .exercise { background: #f3e5f5; color: #7b1fa2; }
+        .food { background: #e8f5e9; color: #2e7d32; }
+        .product-image { 
+            width: 100%; 
+            height: 200px; 
+            background: #f5f5f5; 
+            border-radius: 8px; 
+            margin: 15px 0; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: #999;
+            font-style: italic;
+        }
+        .product-price { 
+            font-size: 1.8rem; 
+            font-weight: bold; 
+            color: #2c3e50; 
+            margin: 15px 0;
+        }
+        .cta-button { 
+            display: inline-block; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            color: white; 
+            padding: 12px 30px; 
+            border-radius: 25px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            margin-top: 10px;
+            border: none; 
+            cursor: pointer;
+        }
+        .cta-button:hover { opacity: 0.9; }
+        footer { 
+            text-align: center; 
+            margin-top: 60px; 
+            padding-top: 20px; 
+            border-top: 1px solid #eee; 
+            color: #666; 
+            font-size: 0.9rem;
+        }
+        @media (max-width: 768px) {
+            .products { grid-template-columns: 1fr; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TrustShowcase</h1>
+        <p class="tagline">Vida de Teletrabajador Saludable</p>
+        <p>Productos verificados para tu día a día en casa</p>
+        <div class="categories">
+            <span class="category-tag">Tecnología</span>
+            <span class="category-tag">Ejercicio</span>
+            <span class="category-tag">Alimentación</span>
+        </div>
+    </header>
+
+    <main>
+        <h2 style="text-align: center; margin-bottom: 20px;">Productos Destacados</h2>
+        <p style="text-align: center; margin-bottom: 30px; color: #666;">
+            Cada producto es probado y verificado por nuestro equipo
+        </p>
+        
+        <div class="products">
+            <div class="product-card">
+                <span class="product-category tech">Tecnología</span>
+                <h3>Silla Ergonómica Markus</h3>
+                <div class="product-image">🪑 Imagen de silla ergonómica</div>
+                <p>Silla cómoda para largas jornadas de teletrabajo</p>
+                <div class="product-price">199€</div>
+                <a href="https://forms.gle/ZwkDSmq8NGdHbYnM8" class="cta-button" target="_blank">
+                    Me interesa
+                </a>
+            </div>
+            
+            <div class="product-card">
+                <span class="product-category exercise">Ejercicio</span>
+                <h3>Bandas de Resistencia</h3>
+                <div class="product-image">💪 Imagen de bandas ejercicio</div>
+                <p>Perfectas para pausas activas entre reuniones</p>
+                <div class="product-price">29,99€</div>
+                <a href="https://forms.gle/ZwkDSmq8NGdHbYnM8" class="cta-button" target="_blank">
+                    Me interesa
+                </a>
+            </div>
+            
+            <div class="product-card">
+                <span class="product-category food">Alimentación</span>
+                <h3>Sartén Antiadherente</h3>
+                <div class="product-image">🍳 Imagen de sartén</div>
+                <p>Para comidas saludables y rápidas</p>
+                <div class="product-price">49,99€</div>
+                <a href="https://forms.gle/ZwkDSmq8NGdHbYnM8" class="cta-button" target="_blank">
+                    Me interesa
+                </a>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin: 50px 0;">
+            <h3>¿No encuentras lo que buscas?</h3>
+            <p>Dinos qué necesitas y lo buscamos por ti</p>
+            <a href="https://forms.gle/ZwkDSmq8NGdHbYnM8" class="cta-button" target="_blank" style="margin-top: 20px;">
+                Solicitar producto personalizado
+            </a>
+        </div>
+    </main>
+    
+    <footer>
+        <p>TrustShowcase &copy; 2025 - Productos verificados para teletrabajadores</p>
+        <p style="margin-top: 10px; font-size: 0.8rem;">
+            anurmoda@gmail.com | 
+            <a href="#" style="color: #667eea;">Política de privacidad</a> | 
+            <a href="#" style="color: #667eea;">Términos de uso</a>
+        </p>
+    </footer>
+</body>
+</html>
